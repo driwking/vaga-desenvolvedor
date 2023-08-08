@@ -17,4 +17,5 @@ for moodels:
 	php artisan make:model Requests -f -m -s
 
 run migration for create tbl in dba:
+
 	php artisan migrate
