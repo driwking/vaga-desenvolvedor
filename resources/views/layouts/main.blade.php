@@ -15,6 +15,9 @@
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/produto.css">
+    <link rel="stylesheet" href="/css/edit-produtos.css">
+
 
     <!-- link js -->
     <script src="/js/script.js"></script>
@@ -34,10 +37,10 @@
                     <!-- botões de navegação -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/">Eventos</a>
+                            <a class="nav-link" aria-current="page" href="/">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/events/create">Criar eventos</a>
+                            <a class="nav-link" href="/criar-produtos">Criar produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/">Entrar</a>
@@ -55,7 +58,7 @@
     </header>
     @yield('content')
 
-    <footer> HDC Events &copy; 2023</footer>
+    <footer></footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

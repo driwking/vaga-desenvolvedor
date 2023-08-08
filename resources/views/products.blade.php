@@ -11,4 +11,15 @@
     <p>teste {{$busca}}</p>
 @endif
 
+<div class="div-main">
+    <div>
+
+    </div>
+</div>
+
+
+
+
+
+
 @endsection

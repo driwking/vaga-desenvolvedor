@@ -13,7 +13,7 @@ class EventController extends Controller
         $arr = ['jorge','mathues','carlos'];
         $idade = 17;
         // retornando valor para ser utilizado
-        return view('welcome',['nome'=>$nome,'idade'=> $idade,'arr'=>$arr]);
+        return view('produtos/produtos',['nome'=>$nome,'idade'=> $idade,'arr'=>$arr]);
     }
     
     public function create () {

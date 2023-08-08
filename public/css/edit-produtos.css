@@ -1,0 +1,64 @@
+.div-main-edit-produtos{
+    margin-top:8vh ;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+}
+.div-imagem{
+    width: 45%;
+    height: 100%;
+    /* border: red 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-imagem img{
+    width: 100%;
+}
+
+.div-view{
+    display: flex;
+}
+.form-edit{
+    margin-left: 20px ;
+}
+
+.form-edit form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+.form-edit input{
+    margin-top: 10px;
+    width: 50%;
+    border-radius:2px ;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.form-edit form > input:focus{
+    border-bottom: 1px solid rgb(69, 190, 238);
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form-edit form > textarea:focus{
+    border: 1px solid rgb(69, 190, 238);
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.form-edit form > label{
+    color: #8d8c8c;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.botao > button:nth-child(3){
+    margin-left:120px;
+    background-color: rgba(219, 27, 27, 0.945);
+}

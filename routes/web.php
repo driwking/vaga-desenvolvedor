@@ -14,20 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\Products;
 
-Route::get('/', [EventController::class, 'index']);
+Route::get('/criar-produtos',[Products::class, 'create']);
+Route::get('/editar-produtos',[Products::class, 'update']);
+Route::get('/', [Products::class, 'index']);
 Route::get('/events/create',[EventController::class,'create']);
 Route::get('/contatos/contatos',function (){
     return view('/contatos/contatos');
 });
 
-Route::get('/produtos', function(){
-    $busca = request('search');
+// Route::get('/produtos', function(){
+//     $busca = request('search');
 
-    return view('/products',['busca' => $busca]);
-});
+//     return view('/products',['busca' => $busca]);
+// });
 
-Route::get('/produtos/{id?}', function($id = null){
-    return view('/products',['id' => $id]);
-});
+// Route::get('/produtos/{id?}', function($id = null){
+//     return view('/products',['id' => $id]);
+// });
 
