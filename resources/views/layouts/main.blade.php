@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/produto.css">
     <link rel="stylesheet" href="/css/edit-produtos.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/perfil-user.css">
 
 
     <!-- link js -->
@@ -43,7 +45,7 @@
                             <a class="nav-link" href="/criar-produtos">Criar produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Entrar</a>
+                            <a class="nav-link" href="/login">Entrar</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/">Cadastrar</a>

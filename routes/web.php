@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ClientsController;
+use App\Http\Controllers\Products;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\EventController;
-use App\Http\Controllers\Products;
 
 Route::get('/criar-produtos',[Products::class, 'create']);
 Route::get('/editar-produtos',[Products::class, 'update']);
 Route::get('/', [Products::class, 'index']);
-Route::get('/events/create',[EventController::class,'create']);
+Route::get('/login',[ClientsController::class, 'create']);
+Route::get('/user',[ClientsController::class,'index']);
 Route::get('/contatos/contatos',function (){
     return view('/contatos/contatos');
 });

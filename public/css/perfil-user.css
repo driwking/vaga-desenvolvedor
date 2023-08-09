@@ -1,0 +1,104 @@
+.body-perfil{
+    width: 100vw;
+    height: 100%;   
+    display: flex;
+}
+
+.div-conteudo  h1{
+    text-align: center;
+    margin: 0 0 50px 0;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    word-spacing: 3px;
+}
+
+
+.div-perfil, .div-perfil .div-conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-perfil .div-conteudo{
+    display: flex;
+    flex-direction: column ;
+}
+
+.div-perfil .imagem{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 30vw;
+    height: 50vh;
+    background-color: #fff;
+    border-right: 1px solid rgb(189, 189, 189);;
+}
+.div-perfil .imagem img{
+    width: 80%;
+    height: 70%;
+    border-radius: 150px;
+    margin-right: 5px;
+}
+
+
+.div-conteudo{
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 50vh;
+    background-color: #fff;
+}
+
+.div-perfil .div-conteudo form{
+    margin-top:30px ;
+    margin-left:30px ;
+}
+
+
+.div-perfil .div-conteudo form input{
+    margin: 0 10px ;
+    /* width: 200px; */
+    margin-bottom: 50px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid;
+    /* box-shadow: 0 0 0 0; */
+}
+
+.div-perfil .div-conteudo form input:focus{
+
+    border-bottom: rgb(69, 190, 238) 1px solid;
+}
+
+.div-perfil .div-conteudo form input:nth-child(2){
+    /* border: red 1px solid; */
+    margin-left:33px;
+    /* width: 200px; */
+    /* height: 200px; */
+}
+
+
+.div-perfil .div-conteudo form input:nth-child(8){
+    width:500px;
+}
+
+
+.div-perfil .botao{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px ;
+    margin-top:30px ;
+
+}
+
+.div-perfil .botao button{
+    height: 40px;
+    text-align: center;
+    width: 200px;
+    color: #ffffff;
+    /* background: none; */
+    border-radius: 2px ;
+}
+.div-perfil .botao button:nth-child(2){
+    color: #ee1e1e;
+    background: none;
+}

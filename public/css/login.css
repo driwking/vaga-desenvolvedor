@@ -1,0 +1,94 @@
+.div-body-login{
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:90vh;
+    border: rgb(43, 255, 0) 1px solid;
+}
+
+.div-background{
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgb(129, 129, 129);
+    margin: auto;  
+    width: 300px;
+    height:400px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.div-background form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-background form label:nth-child(2){
+
+
+    /* padding: 10px 0 0 0 ;
+    position: relative; */
+    
+    padding-bottom: 50px;
+    padding-right: 30px;
+    
+    width: 100%;
+}
+
+
+.div-background form label:nth-child(1){
+
+    /* padding: 10px 0 0 0 ;
+    position: relative; */
+    /* border: red 1px solid; */
+    
+    padding-right: 30px;
+    width: 100%;
+}
+
+
+.div-background form input {
+    width: 200px;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px black solid ;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    
+}
+
+.div-background form button{
+    margin-bottom: 0;
+    margin-top:70px ;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-weight: 100;
+    background-color: rgb(69, 190, 238);
+
+}
+
+.div-background form button:hover{
+    background-color: rgb(42, 168, 218);
+}
+
+
+
+.div-background form input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 1px solid rgb(69, 190, 238);
+}
+
+
+.div-background form h1{
+    margin-bottom: 30px;
+}
