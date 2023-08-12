@@ -20,6 +20,7 @@ Route::get('/criar-produtos',[Products::class, 'create']);
 Route::get('/editar-produtos',[Products::class, 'update']);
 Route::get('/', [Products::class, 'index']);
 Route::get('/login',[ClientsController::class, 'create']);
+Route::post('/clientes',[ClientsController::class, 'store']);
 Route::get('/user',[ClientsController::class,'index']);
 Route::get('/contatos/contatos',function (){
     return view('/contatos/contatos');

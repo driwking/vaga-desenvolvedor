@@ -4,9 +4,12 @@
 
 @section('content')
 
+
 <div class="titulo">
     <h1>Veja nossos produtos</h1>
 </div>
+
+
 
 <div class="body-produtos">
 
@@ -16,17 +19,20 @@
 </div>
 
 <div class="div-main-produtos">
-    <div class="div-exibicao">
+    <div class="div-exibicao"> 
+        @foreach($dados as $valor)
         <div class="div-produto">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41GZCWFJB1L._AC_UL450_SR450,320_.jpg" alt="">       </img>
                 
-                    <p>#1
-Echo Dot (3ª Geração): Smart Speaker com Alexa - Cor Preta</p>
+                   
+                   
+                    <p>{{$valor->titulo_product}}</p>
+                 
                     <p>⭐⭐⭐⭐⭐ <span>207.001</span></p></p>
-                    <p>R$ 220,00</p>
+                    <p>R$ {{$valor->precoa}}</p>
                 
-     
-        </div>
+                </div>
+        @endforeach
         <div class="div-produto">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41GZCWFJB1L._AC_UL450_SR450,320_.jpg" alt="">       </img>
                 

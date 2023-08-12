@@ -30,11 +30,11 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-     
+
                 <!-- logo -->
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <a class="navbar-brand" href="/">
-                        <img src="/img/logo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                        <img src="/img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
                     </a>
                     <!-- botões de navegação -->
                     <ul class="navbar-nav">
@@ -45,13 +45,20 @@
                             <a class="nav-link" href="/criar-produtos">Criar produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/login">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Cadastrar</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/contatos/contatos">Contatos</a>
+                        </li>
+                    </ul>
+                    <form>
+                        
+                        <input type="search" placeholder=" buscar por" id="buscar">
+                        <label for="buscar"><ion-icon name='search'></ion-icon></label>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                                <a class="nav-link" href="/login">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="/">Cadastrar</a>
                         </li>
                     </ul>
                 </div>

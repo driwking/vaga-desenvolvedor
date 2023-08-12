@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Clients;
 use Illuminate\Http\Request;
 
 class ClientsController extends Controller
 {
     
     public function index(){
+        $dates = Clients::all();
 
-       return view('clientes/perfil');
+       return view('clientes/perfil',['dados' => $dates]);
 
     }
     public function create(){
@@ -17,4 +19,15 @@ class ClientsController extends Controller
         return view('clientes/login');
         
     }
+    public function store(Request $request){
+
+        $cliente = new Clients;
+        $cliente->nome_cliente = $request->nome;
+        $cliente->cpf_cliente = $request->cpf;
+        $cliente->email_cliente	= $request->email;
+        $cliente->save();
+
+        return view('clientes/login');
+    }
+
 }
