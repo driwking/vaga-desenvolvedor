@@ -27,7 +27,7 @@ class ClientsController extends Controller
         $cliente->email_cliente	= $request->email;
         $cliente->save();
 
-        return view('clientes/login');
+        return redirect('/')->with('msg','usuario logado!');
     }
 
 }

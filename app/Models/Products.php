@@ -9,13 +9,14 @@ class Products extends Model
 {
     use HasFactory;
 
-    // protected $fillable = [
-    //     'codigo_produto',
-    //     'titulo_product',
-    //     'descricao',
-    //     'preco',
-    //     'estoque'
-    // ];
+    protected $fillable = [
+        'codigo_produto',
+        'titulo_product',
+        'descricao',
+        'preco',
+        'estoque'
+    ];
+
     public function request(){
         return $this->hasMany(related:Requests::class);
     }

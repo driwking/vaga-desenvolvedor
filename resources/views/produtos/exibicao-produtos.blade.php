@@ -5,6 +5,16 @@
 @section('content')
 
 
+@if(session('msg'))
+
+<div class="msg">
+
+    <p>{{session('msg')}}</p>
+
+</div>
+
+@endif
+
 <div class="titulo">
     <h1>Veja nossos produtos</h1>
 </div>
@@ -26,12 +36,12 @@
                 
                    
                    
-                    <p>{{$valor->titulo_product}}</p>
+                    <p>{{$valor}}</p>
                  
                     <p>⭐⭐⭐⭐⭐ <span>207.001</span></p></p>
-                    <p>R$ {{$valor->precoa}}</p>
+                    <p>R$ {{$valor->preco}}</p>
                 
-                </div>
+        </div>
         @endforeach
         <div class="div-produto">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41GZCWFJB1L._AC_UL450_SR450,320_.jpg" alt="">       </img>
